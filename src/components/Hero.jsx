@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/components/Hero.jsx ---
 import { motion } from "framer-motion";
 import { Trophy, GraduationCap, BookOpen, ArrowRight, Sparkles } from "lucide-react";
 import { IMAGES, TRUST_BADGES } from "../lib/constants";
@@ -93,12 +94,12 @@ export const Hero = ({ onPrimary, onSecondary }) => {
         <motion.div
           {...fadeUp}
           transition={{ ...fadeUp.transition, delay: 0.35 }}
-          className="flex flex-col sm:flex-row items-center gap-4 mt-3"
+          className="flex flex-col sm:flex-row items-center gap-4 mt-6 sm:mt-3 w-full sm:w-auto"
         >
           <button
             data-testid="hero-primary-cta"
             onClick={onPrimary}
-            className="pulse-cta group inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300"
+            className="w-full sm:w-auto justify-center pulse-cta group inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300"
           >
             Join the Batch — ₹1500/mo
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
@@ -106,7 +107,7 @@ export const Hero = ({ onPrimary, onSecondary }) => {
           <button
             data-testid="hero-secondary-cta"
             onClick={onSecondary}
-            className="inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-medium bg-white/5 border border-white/15 hover:bg-white/10 hover:border-cyan-500/40 backdrop-blur-md transition-all duration-300"
+            className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-medium bg-white/5 border border-white/15 hover:bg-white/10 hover:border-cyan-500/40 backdrop-blur-md transition-all duration-300"
           >
             View Mentor Profile
           </button>
@@ -116,7 +117,7 @@ export const Hero = ({ onPrimary, onSecondary }) => {
         <motion.div
           {...fadeUp}
           transition={{ ...fadeUp.transition, delay: 0.5 }}
-          className="grid grid-cols-3 gap-6 sm:gap-12 mt-10 pt-8 border-t border-white/10 w-full max-w-3xl"
+          className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-12 mt-10 pt-8 border-t border-white/10 w-full max-w-3xl"
           data-testid="hero-stats"
         >
           {[
@@ -124,7 +125,7 @@ export const Hero = ({ onPrimary, onSecondary }) => {
             { k: "Top 1%", v: "INSPIRE-SHE Fellow" },
             { k: "Emory, USA", v: "Khorana Scholar '25" },
           ].map((s, i) => (
-            <div key={i} className="text-left sm:text-center">
+            <div key={i} className={`text-center ${i === 2 ? "col-span-2 sm:col-span-1" : ""}`}>
               <div className="font-display text-2xl sm:text-3xl font-bold text-white">{s.k}</div>
               <div className="text-xs sm:text-sm text-slate-400 mt-1">{s.v}</div>
             </div>
@@ -134,3 +135,4 @@ export const Hero = ({ onPrimary, onSecondary }) => {
     </section>
   );
 };
+--- END OF FILE ---
