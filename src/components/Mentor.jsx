@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/components/Mentor.jsx ---
 // src/components/Mentor.jsx
 import { motion } from "framer-motion";
 import { 
@@ -34,7 +35,7 @@ export const Mentor = () => {
   ];
 
   return (
-    <section id="mentor" data-testid="mentor-section" className="relative py-24 md:py-32">
+    <section id="mentor" data-testid="mentor-section" className="relative py-24 md:py-32 overflow-hidden">
       <div className="orb bg-cyan-500/20 w-[420px] h-[420px] top-20 -left-32" />
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div {...fadeUp} className="max-w-3xl">
@@ -141,3 +142,4 @@ export const Mentor = () => {
     </section>
   );
 };
+--- END OF FILE ---
