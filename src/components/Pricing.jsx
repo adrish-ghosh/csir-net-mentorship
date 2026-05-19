@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/components/Pricing.jsx ---
 // src/components/Pricing.jsx
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -167,7 +168,7 @@ export const Pricing = () => {
   };
 
   return (
-    <section id="pricing" data-testid="pricing-section" className="relative py-24 md:py-32">
+    <section id="pricing" data-testid="pricing-section" className="relative py-24 md:py-32 overflow-hidden">
       <div className="orb bg-cyan-500/20 w-[460px] h-[460px] -top-20 right-0" />
       <div className="orb bg-yellow-500/10 w-[360px] h-[360px] bottom-0 -left-20" />
 
@@ -367,3 +368,4 @@ export const Pricing = () => {
     </section>
   );
 };
+--- END OF FILE ---
