@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/index.css ---
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -36,6 +37,11 @@
         background-color: hsl(var(--background));
         color: hsl(var(--foreground));
     }
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 html, body, #root {
@@ -115,3 +121,4 @@ html {
     opacity: 0.55;
     pointer-events: none;
 }
+--- END OF FILE ---
