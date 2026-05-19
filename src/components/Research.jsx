@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/components/Research.jsx ---
 // src/components/Research.jsx
 import { motion } from "framer-motion";
 import { BookOpenText, Microscope, ExternalLink, Activity, Sparkles } from "lucide-react";
@@ -11,7 +12,7 @@ const fadeUp = {
 
 export const Research = () => {
   return (
-    <section id="research" className="relative py-24 md:py-32 bg-[#0B1120]">
+    <section id="research" className="relative py-24 md:py-32 bg-[#0B1120] overflow-hidden">
       <div className="orb bg-blue-500/10 w-[500px] h-[500px] top-1/4 -right-64" />
       <div className="orb bg-cyan-500/10 w-[400px] h-[400px] bottom-10 -left-40" />
 
@@ -125,3 +126,4 @@ export const Research = () => {
     </section>
   );
 };
+--- END OF FILE ---
