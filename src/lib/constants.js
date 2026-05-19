@@ -10,7 +10,7 @@ export const BRAND = {
 export const IMAGES = {
   // Replace these with actual URLs or import them from a local assets folder
   hero: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2000&auto=format&fit=crop", 
-  mentor: "/mentor.JPG",
+  mentor: "/mentor.png",
   qr: "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=upi://pay?pa=theadirsh.ghosh-1@okicici&color=FFFFFF&bgcolor=0B1120",
 };
 
