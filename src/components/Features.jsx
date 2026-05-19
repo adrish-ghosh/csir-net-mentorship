@@ -1,3 +1,4 @@
+--- START OF FILE csir-net-mentorship-main/src/components/Features.jsx ---
 import { motion } from "framer-motion";
 import {
   Brain,
@@ -22,7 +23,7 @@ const item = {
 
 export const Features = () => {
   return (
-    <section id="features" data-testid="features-section" className="relative py-24 md:py-32">
+    <section id="features" data-testid="features-section" className="relative py-24 md:py-32 overflow-hidden">
       <div className="orb bg-yellow-500/10 w-[420px] h-[420px] top-20 -right-32" />
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="max-w-3xl">
@@ -79,3 +80,4 @@ export const Features = () => {
     </section>
   );
 };
+--- END OF FILE ---
